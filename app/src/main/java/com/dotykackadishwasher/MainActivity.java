@@ -234,8 +234,6 @@ public class MainActivity extends AppCompatActivity {
         outputStream.flush();
         outputStream.close();
 
-        
-
     } */
 
 }
