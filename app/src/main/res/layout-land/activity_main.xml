@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dishwasherClean"
+            android:text="Myčka je volná"
+            android:textSize="15sp"
+            android:background="@drawable/round"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="120sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Myčka je plná"
+            android:id="@+id/dishwasherFull"
+            android:layout_marginTop="40sp"
+            android:background="@drawable/round"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dishwasherDirty"
+            android:text="Myčka je zapnutá"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/round"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="120sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:id="@+id/textInformation"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dontPut"
+        android:textSize="70sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20sp"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:35:00"
+        android:textSize="50sp"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center"
+        android:id="@+id/countdownText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startTimer_button"
+        android:text="Spusť odpočet"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_gravity="center"
+        android:id="@+id/resetButton"
+        android:visibility="invisible"
+        tool:visibility="visible"/>
+
+</LinearLayout>
