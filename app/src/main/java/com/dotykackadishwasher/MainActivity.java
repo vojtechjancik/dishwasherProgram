@@ -129,7 +129,6 @@ public class MainActivity extends AppCompatActivity {
                 resetTimer();
             }
         });
-
         updateCountdownText();
     }
 
@@ -151,8 +150,7 @@ public class MainActivity extends AppCompatActivity {
                     timeLeftInMillisLongMode = millisUntilFinished;
                 }
 
-                    updateCountdownText();
-
+                updateCountdownText();
             }
 
             @Override
@@ -233,7 +231,6 @@ public class MainActivity extends AppCompatActivity {
         outputStream.write(param1.getBytes());
         outputStream.flush();
         outputStream.close();
-
     } */
 
 }
